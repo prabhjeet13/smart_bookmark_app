@@ -19,6 +19,8 @@ git clone https://github.com/prabhjeet13/smart_bookmark_app.git
 
 cd smart_bookmark_app
 
+cd frontend
+
 ## Install Dependencies
 
 npm install
@@ -30,8 +32,6 @@ NEXT_PUBLIC_SUPABASE_URL= --Your supabase project url--
 NEXT_PUBLIC_SUPABASE_PUBLISHABLE_DEFAULT_KEY= -- your supabase project key --
 
 ## Run your project
-
-cd frontend
 
 npm run dev
 
