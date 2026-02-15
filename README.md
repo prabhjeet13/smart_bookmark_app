@@ -35,6 +35,18 @@ NEXT_PUBLIC_SUPABASE_PUBLISHABLE_DEFAULT_KEY= -- your supabase project key --
 
 npm run dev
 
+## Challenges faced
+
+Handling authentication and real-time updates together.
+
+I learned important Supabase concepts like sessions (to know if a user is logged in), 
+
+auth state changes (to sync login/logout across tabs), 
+
+and real-time channels (to update data instantly without refreshing).
+
+
+
 # BOOKMARK MANAGER APP PHOTOS: 
 ## 1. SIGN IN
 <img width="1899" height="955" alt="image" src="https://github.com/user-attachments/assets/68bb1617-c3ef-487a-a4e2-7736ba02aa8f" />
