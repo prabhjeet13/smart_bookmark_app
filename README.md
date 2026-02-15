@@ -5,8 +5,11 @@ The app supports authentication, row-level security, and real-time updates acros
 # Tech Stack
 
 Frontend: Next.js, React, TypeScript
+
 Backend / Auth / Database: Supabase
+
 Styling: Tailwind CSS
+
 Deployment: Vercel
 
 
