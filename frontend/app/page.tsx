@@ -12,15 +12,18 @@ export default function Home() {
 
   const router = useRouter();
   useEffect(() => {
-    const checkSession = async () => {
-      const { data } = await supabase.auth.getSession();
-      if (data.session) {
-        router.push("/bookmarks");
-      } 
-    };
+    const { data: authListener } = supabase.auth.onAuthStateChange(
+      (event, session) => {
+        if (event === "SIGNED_IN" && session) {
+          router.push("/bookmarks");
+        }
+      }
+    );
 
-    checkSession();
-  }, [router]);
+    return () => {
+      authListener.subscription.unsubscribe();
+    };
+}, [router]);
   
   return (
    <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-slate-100 to-slate-200">
