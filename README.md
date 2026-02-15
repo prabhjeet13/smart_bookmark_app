@@ -15,7 +15,7 @@ Deployment: Vercel
 
 # Project Setup
 ## Clone the repository
-git clone https://github.com/your-username/smart_bookmark_app.git
+git clone https://github.com/prabhjeet13/smart_bookmark_app.git
 
 cd smart_bookmark_app
 
